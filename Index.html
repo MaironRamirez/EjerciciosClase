@@ -4,19 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Estilos.css">
     <title>Taller</title>
 </head>
-<body>
-    <H1>Ejercicios Taller Multimedia</H1>
-    <div class="Ej1">
-        <H1>¿Eres mayor de edad?</H1>
-        <label for="">Ingresa tu nombre:</label><br></br>
-        <input type="text">
-        <br></br>
-        <label for="">Ingresa tu edad:</label><br></br>
-        <input type="number">
-        <br></br>
-        <button>Calcular</button>
+<body class="Body">
+    <H1 style="color: grey;">Ejercicios Taller Multimedia</H1>
+    <div class="Ejercicios">
+        <div class="Ej1">
+            <H1 class="Titulos1">¿Eres mayor de edad?</H1>
+            <label for="">Ingresa tu nombre:</label><br></br>
+            <input type="text">
+                <br></br>
+            <label for="">Ingresa tu edad:</label><br></br>
+            <input type="number">
+            <button>Calcular</button>
+            <h3 class="Mensaje_Ej1"></h3>
+        </div>
+            <br>
+        <div class="Ej2">
+            <H1 class="Titulos1">Calculadora de notas</H1>
+            <form action="">¿Que materia quieres calcular?</form>
+                <Select>
+                    <option disabled selected="">Selecciona una materia</option>
+                    <option value="">Matematicas</option>
+                    <option value="">Ingles</option>
+                    <option value="">Diseño Multimedia</option>
+                </Select>
+                    <br>
+                    <br>
+            <label for=""> Ingrese sus notas</label>
+                <br>
+            <input type="text">
+                <br>
+            <h3 class="Resultado_Ej2"></h3>
+
+        </div>
+            <br>
+        <div class="Ej3">
+            <H1 class="Titulos1">Organiza valores numericos</H1>
+            <label for="">Ingresa valores numericos</label>
+            <input type="number">
+            <h3 class="Orden_Num"></h3>
+        </div>
     </div>
     <script ></script>
 </body>
