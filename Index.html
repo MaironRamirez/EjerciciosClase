@@ -8,45 +8,49 @@
     <title>Taller</title>
 </head>
 <body class="Body">
-    <H1 style="color: grey;">Ejercicios Taller Multimedia</H1>
+    <H1 style="color: black;">Ejercicios Taller Multimedia</H1>
     <div class="Ejercicios">
         <div class="Ej1">
             <H1 class="Titulos1">¿Eres mayor de edad?</H1>
-            <label for="">Ingresa tu nombre:</label><br></br>
-            <input type="text">
-                <br></br>
-            <label for="">Ingresa tu edad:</label><br></br>
-            <input type="number">
-            <button>Calcular</button>
-            <h3 class="Mensaje_Ej1"></h3>
+            <label for="">Ingrese su nombre:</label>
+                <br>
+            <input type="text" id="Nombre1" onkeyup="countName(this);">
+                <br>
+            <label for="">Ingrese su edad:</label>
+                <br>
+            <input type="text" id="Edad" onkeyup="countChars(this);">
+            <button id="btnEdad" onclick="pres(this)">Calcular</button>
+            <h3 class="Mensaje_Ej1" id="Resultado">.</h3>
         </div>
             <br>
         <div class="Ej2">
-            <H1 class="Titulos1">Calculadora de notas</H1>
-            <form action="">¿Que materia quieres calcular?</form>
-                <Select>
-                    <option disabled selected="">Selecciona una materia</option>
-                    <option value="">Matematicas</option>
-                    <option value="">Ingles</option>
-                    <option value="">Diseño Multimedia</option>
-                </Select>
-                    <br>
-                    <br>
-            <label for=""> Ingrese sus notas</label>
-                <br>
-            <input type="text">
-                <br>
-            <h3 class="Resultado_Ej2"></h3>
-
+                    <H1 class="Titulos1">Averigua si pasas la materia</H1>
+                    <label for="">Ingrese su nombre</label>
+                        <br>
+                    <input name="message" onkeyup="countName(this);" id="text"></input>
+                        <br>
+                    <label class="title">Nombre de la materia</label>
+                        <br>
+                    <input name="message" onkeyup="countCourse(this);" id="text"></input>
+                        <br>
+                    <label class="title">Nota 1</label>
+                    <input name="message" onkeyup="countNote1(this);" class="notas" id="text"></input>
+                    <label class="title">Nota 2</label>
+                    <input name="message" onkeyup="countNote2(this);" class="notas" id="text"></input>
+                    <label class="title">Nota 3</label>
+                    <input name="message" onkeyup="countNote3(this);" class="notas" id="text"></input>
+                    <button onclick="press(this)" id="button_add">Revisar</button>
+                    <H3 class="txtVista" id="character_num"> . </H3>
         </div>
             <br>
         <div class="Ej3">
-            <H1 class="Titulos1">Organiza valores numericos</H1>
-            <label for="">Ingresa valores numericos</label>
-            <input type="number">
-            <h3 class="Orden_Num"></h3>
+            <H1 class="Titulos1">Identificador de numeros Pares o Impares</h2>
+                    <label for="">Ingrese valores numericos ceparados por comas</label>
+                        <br>
+                    <textarea type="submit" name="numeros" id="input" cols="30" rows="3"></textarea><button value="Calcular" id="submit" onclick="test(input)">Revisar</button>
+                    <p id="output" class="txtVista" name="salida" contentEditable="true"></p>
         </div>
     </div>
-    <script ></script>
+    <script src="Jss/Codigo.js"></script>
 </body>
 </html>
